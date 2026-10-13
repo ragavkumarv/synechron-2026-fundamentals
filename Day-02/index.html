@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello, 🌏!!</h1>
+
+    <script>
+      console.log("Hello, Pavan 🌏❤️");
+      var height = 175;
+      var studentName = "Vishal"; // camelCase
+
+      console.log(height);
+
+      console.log(typeof height, typeof studentName);
+
+      console.log(5 + 10); // Addition
+      console.log("Hello" + " Rohit"); // Concatenation (Prefers)
+
+      // Implicit  Coercion (Type casting) - JS decides
+      console.log(5 + "10"); // "510"
+      console.log(5 - "10"); // -5
+
+      var chocolates = "10";
+      // Implicit  Coercion
+      console.log(5 + parseInt(chocolates));
+      console.log(5 + Number(chocolates));
+      console.log(5 + +chocolates);
+
+      var height = "100.7";
+      // Explicit  Coercion
+      console.log(5 + parseInt(height));
+      console.log(5 + Number(height));
+      console.log(5 + +height);
+
+      //   == & === if both are same data type
+      console.log(6 == 6); // true
+      console.log(6 === 6); // true
+
+      console.log(6 == "6"); // true // Allow Coercion "6" -> 6
+      console.log(6 === "6"); // false // Doesn't Allow Coercion
+
+      console.log("12" * 2); // 24
+      console.log("12" / 2); // 6
+
+      //   "24" -> input age
+      var age = "24";
+      console.log(+age + 1);
+
+      console.log(parseInt("123.45abhinav"));
+      console.log(parseFloat("123.45abhinav"));
+
+      console.log(parseFloat("123.45abhinav55"));
+
+      console.log(parseFloat("1a23.45abhinav55"));
+      console.log(parseFloat("a1"));
+
+      var t1; // Declaration
+
+      console.log(t1); // undefined - value
+      console.log(typeof t1); // "undefined" // typeof -> string
+
+      //   console.log(t2); // t2 is not defined
+
+      var t3 = null; // null has to be assigned
+
+      console.log(t3);
+      console.log(typeof t3); // object
+
+      var x1 = parseFloat("a1");
+      console.log(typeof x1);
+
+      console.log("12" * 2, typeof ("12" * 2));
+      console.log("12" * "2");
+
+      console.log("abc" * 2);
+
+      //   Bottom values
+    </script>
+  </body>
+</html>
+
+<!-- 
+ctrl + ~   -> Boiler plate
+ctrl + click  -> Open click
+ctrl + , -> settings
+-->
