@@ -24,7 +24,7 @@ console.log("30000".padStart(10));
 console.log("7500".padStart(10));
 
 var quote3 = "Failure is the first step to success";
-
+``;
 console.log(quote3.includes("first")); // true
 console.log(quote3.includes("or")); // false
 console.log(quote3.includes("z"));
