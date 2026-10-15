@@ -13,6 +13,16 @@ const student = {
   //   height: undefined,
 };
 
+const {
+  name = "N/A",
+  address: { city = "N/A" },
+  hobbies: [, , third = "Not found"],
+} = student;
+
+console.log(name, city, third);
+
+console.log(student.address.city);
+
 // 1. name - "N/A"
 // 2. city - "N/A"
 // 3. third hobby - "Not found"
@@ -28,10 +38,10 @@ console.log(student);
 // console.log(hobbies);
 // console.log(second);
 
-const {
-  hobbies: [first, second, third],
-} = student;
+// const {
+//   hobbies: [first, second, third],
+// } = student;
 
-// console.log(second);
-console.log(first, second, third);
+// // console.log(second);
+// console.log(first, second, third);
 // console.log(student.hobbies);
