@@ -47,6 +47,8 @@ console.log(t1, t2);
 console.log(typeof t2);
 
 console.log(Math.max(5, 10, 4));
+console.log(Math.max(5));
+console.log(Math.max(5, 2));
 
 const arr = [100, 200, 300, 10000, 500];
 // console.log(Math.max(arr));

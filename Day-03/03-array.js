@@ -34,3 +34,12 @@ console.log(flowers.slice(1, 4));
 // array to string -> 💐 | 🌷 | 🌼 | 🌺 | 🌹
 
 console.log(flowers.join(" | "));
+
+const t1 = [100, 200]; // 1 GB
+const t2 = [100, 200];
+const t3 = t1; // Copy by reference
+
+console.log(t1 == t2); // false
+console.log(t1 == t3); // true
+
+const t4 = [...t1, 20];
