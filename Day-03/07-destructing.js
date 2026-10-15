@@ -15,7 +15,7 @@ const student = {
   hobbies: ["rugby 🏉", "chess ♟️", "music 🎵"],
 };
 
-// const height = student.height;
+// const height = s`tudent.height;
 // const balance = student.balance;
 
 const { height, balance } = student;
@@ -23,4 +23,4 @@ console.log(height, balance);
 
 // Your code
 
-console.log(favHobby); // chess
+console.log(favHobby); // "chess ♟️"
