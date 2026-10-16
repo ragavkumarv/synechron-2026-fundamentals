@@ -73,3 +73,10 @@ const dbl1 = (n) => {
   console.log(n);
   return n * 2;
 };
+
+const student = {
+  name: "cool",
+  // fullname: (name) => `Hello, ${name}`,
+};
+
+// student.fullname();

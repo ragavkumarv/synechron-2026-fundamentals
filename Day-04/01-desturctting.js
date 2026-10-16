@@ -45,3 +45,22 @@ console.log(student);
 // // console.log(second);
 // console.log(first, second, third);
 // console.log(student.hobbies);
+
+const student1 = {
+  //   name: "murangi 🔥",
+  height: 175,
+  balance: 50_000,
+  address: {
+    // city: "johannesburg 🏙️",
+    province: "gauteng 📍",
+  },
+  hobbies: ["rugby 🏉", "chess ♟️"],
+  //   age: null,
+  //   height: undefined,
+};
+
+function getCity({ address: { city = "N/A" }, hobbies }) {
+  return city;
+}
+
+getCity(student1);
