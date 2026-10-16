@@ -11,4 +11,14 @@ const sayHello1 = () => {
   };
 };
 
+// Solution 1:
+const result = sayHello1();
+console.log(result());
+
 // Below
+
+// a = b
+// Solution 2:
+console.log(sayHello1()());
+
+// If function can be treated as value - First class citizen
