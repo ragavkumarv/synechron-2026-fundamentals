@@ -26,16 +26,79 @@
 
       .hobbies {
         color: purple;
+        list-style: none;
       }
+
+      /* Combinators >, <space>, ~, + */
+      /* > - child */
+
+      /* selector1 > selector2 */
+
+      /* li which are child of hobbies */
+      /* li { */
+
+      .hobbies > li {
+        /* border: 2px solid orange; */
+        margin-bottom: 8px;
+      }
+
+      /* nth-child selector */
+
+      /* .hobbies > li:nth-child(odd) {
+        color: orange;
+      } */
+
+      /* first child */
+
+      /* AP - a + nd   0 -> Infinity */
+      /* 2 5 8 11 */
+      .hobbies > li:nth-child(3n + 2) {
+        color: orange;
+        /* text-transform: uppercase; */
+      }
+
+      /* 
+      .hobbies > li:nth-child(2) {
+        color: pink;
+      }
+
+      .hobbies > li:nth-child(3) {
+        color: crimson;
+      }
+
+      .hobbies > li:nth-child(4) {
+        color: plum;
+      }
+      .hobbies > li:nth-child(5) {
+        color: skyblue;
+      } */
+
+      /* AP - a + nd   0 -> Infinity */
+      /* 3 7 11 15... -> 4 */
     </style>
   </head>
   <body>
     <ul class="hobbies">
       <li><i class="fa-solid fa-chess"></i>Chess</li>
       <li><i class="fa-solid fa-baseball-bat-ball"></i> Cricket</li>
-      <li>🕹️ Gaming</li>
+      <li><i class="fa-brands fa-playstation"></i> Gaming</li>
       <li><i class="fa-solid fa-table-tennis-paddle-ball"></i> Table Tennis</li>
-      <li>Reading</li>
+      <li><i class="fa-solid fa-book-open"></i>Reading</li>
+      <li><i class="fa-solid fa-table-tennis-paddle-ball"></i> Table Tennis</li>
+      <li><i class="fa-solid fa-book-open"></i>Reading</li>
+      <li><i class="fa-solid fa-chess"></i>Chess</li>
+      <li><i class="fa-solid fa-baseball-bat-ball"></i> Cricket</li>
+      <li><i class="fa-brands fa-playstation"></i> Gaming</li>
+      <li><i class="fa-solid fa-table-tennis-paddle-ball"></i> Table Tennis</li>
+      <li><i class="fa-solid fa-book-open"></i>Reading</li>
+      <li><i class="fa-solid fa-table-tennis-paddle-ball"></i> Table Tennis</li>
+      <li><i class="fa-solid fa-book-open"></i>Reading</li>
+    </ul>
+
+    <ul>
+      <li>Chennai</li>
+      <li>Tokyo</li>
+      <li>Newyork</li>
     </ul>
   </body>
 </html>
