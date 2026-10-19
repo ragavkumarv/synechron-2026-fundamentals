@@ -4,11 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .main-container {
+        background: oklch(0.87 0.08 234.06);
+        border-left: 8px solid oklch(0.7 0.17 243.4);
+        max-width: 520px;
+        border-radius: 16px;
+        font-family: "Inter", sans-serif;
+        padding: 16px;
+      }
+
+      img {
+        height: 200px;
+      }
+    </style>
   </head>
   <body>
-    Intended Audience This tutorial assumes that you already have a static React
-    site (Gatsby/Next) being deployed on Vercel or Netlify. It's written with
-    the intermediate React developer in mind; if you're newer to the modern JS
-    ecosystem, it might be a bit hard to follow.
+    <div class="main-container">
+      <h3>Intended Audience</h3>
+      <p>
+        This tutorial assumes that you already have a static React site
+        (Gatsby/Next) being deployed on Vercel or Netlify.
+      </p>
+      <p>
+        It's written with the intermediate React developer in mind; if you're
+        newer to the modern JS ecosystem, it might be a bit hard to follow.
+      </p>
+    </div>
+    <!-- <img src="./image.png" alt="" /> -->
   </body>
 </html>
