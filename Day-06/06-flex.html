@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        background: plum;
+        width: 100px;
+        /* height: 1000px; */
+      }
+
+      .box2 {
+        background: purple;
+        width: 200px;
+      }
+
+      .box3 {
+        background: pink;
+        width: 150px;
+      }
+
+      .box1,
+      .box2,
+      .box3 {
+        /* display: inline; */
+        /* inline - doesn't respect height or width */
+      }
+
+      /* JC - main axis, AI - cross axis */
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 16px;
+      }
+
+      body {
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        voluptatem.
+      </div>
+      <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus, voluptatem. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptatibus, voluptatem. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Voluptatibus, voluptatem. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        voluptatem.
+      </div>
+
+      <div class="box3">
+        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus, voluptatem. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptatibus, voluptatem.
+      </div>
+    </div>
+  </body>
+</html>
