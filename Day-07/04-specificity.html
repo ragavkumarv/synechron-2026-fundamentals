@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* CSS - Cascading (overriding)  Style Sheet */
+
+      #awesome {
+        color: palegreen;
+      }
+
+      .fun-1 {
+        color: purple;
+      }
+
+      .fun-2 {
+        color: blue;
+      }
+
+      p {
+        color: skyblue !important;
+        color: orange;
+      }
+
+      p {
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Order here does not matter - Declaration matter -->
+    <!-- Inline style -->
+    <p style="color: violet; text-align: center" class="fun-2 fun-1">
+      This is cool
+    </p>
+
+    <h1 id="awesome">Wow</h1>
+  </body>
+</html>
+
+<!-- only one awesome (id) in this html -->
+
+<!--
+What is Specificity?
+When there is clash of style then which one does CSS pick is Specificity 
+
+Specificity order  - (class, elements) -> Stay here
+inline, id - Hard to override
+  
+!important > inline > id > class > elements 
+-->
