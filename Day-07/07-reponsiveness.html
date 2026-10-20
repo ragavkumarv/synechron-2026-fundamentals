@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* Mobile first -> Breakpoint (ascending) */
+      .box {
+        height: 400px;
+        width: 400px;
+        background: crimson;
+      }
+
+      /* screen width >= 600px 
+        Code wakes up at 600px 
+      */
+
+      /* Breakpoint - 600px */
+      @media (width >= 600px) {
+        .box {
+          background: teal;
+        }
+      }
+
+      /* Laptop */
+
+      /* screen width >= 1200px 
+        Code wakes up at 1200px 
+      */
+
+      /* Breakpoint - 1200px */
+      @media (width >= 1200px) {
+        .box {
+          background: orange;
+          border-radius: 50%;
+        }
+      }
+
+      body {
+        margin: 0;
+        display: grid;
+        min-height: 100vh;
+        place-content: center;
+      }
+
+      /* 0 -> 600 -> 1200 */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+
+<!-- 
+Responsiveness - Adapting to different sizes
+
+-->

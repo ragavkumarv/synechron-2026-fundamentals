@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        height: 400px;
+        width: 400px;
+        background: crimson;
+      }
+
+      /* screen width >= 1200px 
+        Code wakes up at 1200px 
+      */
+      /* Laptop */
+      @media (width >= 1200px) {
+        .box {
+          background: orange;
+          border-radius: 50%;
+        }
+      }
+
+      /* screen width >= 600px 
+        Code wakes up at 600px 
+      */
+      @media (width >= 600px) {
+        .box {
+          background: teal;
+        }
+      }
+
+      /* How many times color box will change , when , what is final shape? */
+
+      body {
+        margin: 0;
+        display: grid;
+        min-height: 100vh;
+        place-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+
+<!-- 
+Responsiveness - Adapting to different sizes
+
+-->
