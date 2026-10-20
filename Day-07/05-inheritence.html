@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-content: center;
+      }
+
+      .social-container {
+        list-style: none;
+        color: purple;
+        font-style: italic;
+        font-weight: 900;
+        font-family: sans-serif;
+
+        /* Not Inherited */
+        border: 2px solid orange;
+        margin: 16px;
+        text-decoration: underline;
+      }
+
+      li {
+        color: crimson;
+      }
+
+      .social-container > li {
+        /* border: 2px solid orange; */
+        /* margin: 16px; */
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="social-container">
+      <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+      <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+      <li><i class="fa-brands fa-whatsapp"></i> Whatsapp</li>
+      <li><i class="fa-brands fa-x"></i> Twitter</li>
+      <li><i class="fa-brands fa-linkedin"></i> Linkedin</li>
+    </ul>
+  </body>
+</html>
