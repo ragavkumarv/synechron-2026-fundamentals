@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1,
+      .box2,
+      .box3 {
+        border: 2px solid black;
+      }
+
+      .box1 {
+        background: plum;
+        /* width: 100px; */
+      }
+
+      .box2 {
+        background: purple;
+        /* width: 200px; */
+      }
+
+      .box3 {
+        background: pink;
+        /* width: 150px; */
+      }
+
+      .container {
+        display: grid;
+        /* Fractional unit - 1:1 */
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+        /* repeat */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 3fr);
+
+        /* mix units */
+        grid-template-columns: 140px 250px 1fr;
+
+        gap: 16px;
+      }
+
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        voluptatem.
+      </div>
+      <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus, voluptatem.
+      </div>
+      <div class="box3">
+        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus, voluptatem. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptatibus, voluptatem.
+      </div>
+      <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus, voluptatem.
+      </div>
+      <div class="box3">
+        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus, voluptatem. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptatibus, voluptatem.
+      </div>
+      <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus, voluptatem.
+      </div>
+      <div class="box3">
+        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus, voluptatem. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptatibus, voluptatem.
+      </div>
+      <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus, voluptatem.
+      </div>
+      <div class="box3">
+        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus, voluptatem. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptatibus, voluptatem.
+      </div>
+    </section>
+  </body>
+</html>
+
+<!-- Go hand in hand -->
