@@ -11,6 +11,8 @@
   </head>
   <body>
     <!-- Task 2.1 -->
+    <input type="text" />
+
     <h2>Hobbies</h2>
     <ul class="hobbies-container"></ul>
 
@@ -31,6 +33,24 @@
         "🧶 Knitting",
       ];
 
+      const list = document.querySelector(".hobbies-container");
+
+      // for (const hobby of hobbies) {
+      //   const listItem = document.createElement("li");
+      //   listItem.innerText = hobby;
+      //   list.append(listItem);
+      // }
+
+      // console.log(list.innerText);
+      // console.log(list.innerHTML);
+
+      for (const hobby of hobbies) {
+        list.innerHTML += `<li>${hobby}</li>`;
+      }
+
+      // <input type="text" style="color: orange"  placeholder="Fullname" />
+      document.querySelector("input").setAttribute("placeholder", "Fullname");
+      document.querySelector("input").setAttribute("style", "color: pink");
       //   Your code
     </script>
   </body>
