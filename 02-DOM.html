@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        /* color: crimson; */
+      }
+
+      h2 {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Super Awesome</h1>
+
+    <p class="fun">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab omnis
+      soluta perferendis mollitia quibusdam eligendi nobis, aliquam incidunt
+      nemo voluptatibus natus laboriosam commodi, dolorum enim, facilis amet
+      illo voluptatum!
+    </p>
+
+    <h1 class="fun">Welcome to Synechron</h1>
+
+    <script>
+      const result = document.querySelectorAll("h1");
+
+      console.log(result);
+
+      //   Read
+      console.log(result[0].innerText);
+      console.log(result[1].innerHTML);
+
+      result[1].innerHTML = "Happy New Year 🎉";
+
+      const output = document.querySelectorAll(".fun");
+
+      console.log(output[0].innerText);
+      console.log(output[1].innerHTML);
+
+      const heading = document.createElement("h2");
+      heading.innerText = "Be Kind.";
+      document.querySelector("body").append(heading);
+
+      //   console.log(heading);
+
+      //   console.log(document.querySelector("body").innerText);
+      //   console.log(document.querySelector("body").innerHTML);
+    </script>
+  </body>
+</html>
