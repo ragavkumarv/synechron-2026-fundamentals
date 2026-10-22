@@ -20,35 +20,46 @@
     </style>
   </head>
   <body>
-    <!-- Event listener - onclick -->
+    <!-- Event listener - onclick, onInput, onChange - 'on' start -->
+    <!-- Event happens -> Action Taken | Click -> Start() 
+    -->
     <button onclick="start()">Start ▶️</button>
     <button onclick="pause()">Pause ⏸️</button>
     <button onclick="stop()">Stop ⏹️</button>
     <script>
       const colors = ["crimson", "orange", "teal", "pink"];
-      //   Task -  Every 2s body color must change and then cycle
+
       let index = 0;
-
-      setInterval(() => {
-        // reset
-        if (index == colors.length) {
-          index = 0;
-        }
-
-        console.log(index, colors[index]);
-
-        document
-          .querySelector("body") // Select body Where style = 'Background: orange'
-          .setAttribute("style", `background: ${colors[index]}`);
-        index++;
-      }, 10000);
+      let colorInterval;
 
       function start() {
         console.log("Starting....");
+        //   Task -  Every 2s body color must change and then cycle
+
+        colorInterval = setInterval(() => {
+          // reset
+          if (index == colors.length) {
+            index = 0;
+          }
+
+          console.log(index, colors[index]);
+
+          document
+            .querySelector("body") // Select body Where style = 'Background: orange'
+            .setAttribute("style", `background: ${colors[index]}`);
+          index++;
+        }, 2000);
       }
 
       function stop() {
         console.log("Stopping...");
+        clearInterval(colorInterval);
+        index = 0;
+      }
+
+      function pause() {
+        console.log("Pausing...");
+        clearInterval(colorInterval);
       }
 
       //   Task
