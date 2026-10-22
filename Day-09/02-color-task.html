@@ -7,13 +7,22 @@
     <style>
       body {
         background: pink;
+        margin: 0px;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        gap: 4px;
+      }
+
+      button {
+        font-size: 24px;
       }
     </style>
   </head>
   <body>
     <!-- Event listener - onclick -->
-    <button onclick="start()">Start</button>
-    <button onclick="stop()">Stop</button>
+    <button onclick="start()">Start ▶️</button>
+    <button onclick="stop()">Stop ⏹️</button>
     <script>
       const colors = ["crimson", "orange", "teal", "pink"];
       //   Task -  Every 2s body color must change and then cycle
@@ -31,7 +40,7 @@
           .querySelector("body") // Select body Where style = 'Background: orange'
           .setAttribute("style", `background: ${colors[index]}`);
         index++;
-      }, 5000);
+      }, 10000);
 
       function start() {
         console.log("Starting....");
