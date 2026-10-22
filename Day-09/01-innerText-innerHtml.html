@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container"></div>
+
+    <h1>Nice</h1>
+    <h1>Cool</h1>
+
+    <script>
+      //   document.querySelector(".container").innerText = "Super";
+
+      //   const para = document.createElement("p");
+      //   para.innerText = "Super";
+      //   document.querySelector(".container").append(para);
+
+      //   document.querySelector(".container").innerText = "<p>Super</p>";
+      document.querySelector(".container").innerHTML = "<p>Super</p>";
+
+      console.log(document.querySelector("h1"));
+      console.log(document.querySelectorAll("h1"));
+      const result = document.querySelectorAll("h1");
+      console.log(result[0]);
+      console.log(result[1]);
+
+      console.log(document.querySelector(".container").innerHTML);
+      console.log(document.querySelector(".container").innerText);
+      console.log(result[0].innerText);
+      console.log(result[0].innerHTML);
+
+      console.log(result.keys());
+
+      //   result.forEach()
+
+      // console.log([...result])
+    </script>
+  </body>
+</html>

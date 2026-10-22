@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Event listener - onclick -->
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <script>
+      const colors = ["crimson", "orange", "teal", "pink"];
+      //   Task -  Every 2s body color must change and then cycle
+      let index = 0;
+
+      setInterval(() => {
+        // reset
+        if (index == colors.length) {
+          index = 0;
+        }
+
+        console.log(index, colors[index]);
+
+        document
+          .querySelector("body") // Select body Where style = 'Background: orange'
+          .setAttribute("style", `background: ${colors[index]}`);
+        index++;
+      }, 5000);
+
+      function start() {
+        console.log("Starting....");
+      }
+
+      function stop() {
+        console.log("Stopping...");
+      }
+
+      //   Task
+      //   Start -> Stop -> Start (Start from first color)
+    </script>
+  </body>
+</html>
