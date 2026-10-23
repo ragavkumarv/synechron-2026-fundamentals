@@ -198,7 +198,7 @@ fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=pancake") // Promise
 // Task 1.1 - Provide the pancake dish names in array
 // [ 'Pancakes', 'Blini Pancakes', 'Banana Pancakes', ....]
 
-// Task 1.2 - Print the array with noodles which are Seafood category
+// Task 1.2 - Print the array with "noodles" which are Seafood category
 // [
 //   "Laksa King Prawn Noodles",
 //   "Spicy Thai prawn noodles",

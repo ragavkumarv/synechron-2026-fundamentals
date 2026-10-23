@@ -7,6 +7,8 @@
 const dbl = (num) => num * 2;
 [1, 2, 3].map(dbl);
 
+[1, 2, 3].map((n) => dbl(n));
+
 // callback function
 const printHi = () => {
   console.log("Hi");
