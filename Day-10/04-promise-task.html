@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const getRecipes = (recipe) =>
+        fetch(
+          `https://www.themealdb.com/api/json/v1/1/search.php?s=${recipe}`,
+        ).then((res) => res.json());
+
+      // How it works? - Praveen
+      const getRecipeNames = (recipe) =>
+        getRecipes(recipe).then((data) =>
+          data.meals.map((recipe) => recipe?.strMeal ?? "Name not available"),
+        );
+
+      const getSeaFoodNames = (recipe) =>
+        getRecipes(recipe).then((data) =>
+          data.meals
+            .filter((recipe) => recipe?.strCategory?.toLowerCase() == "seafood")
+            .map((recipe) => recipe?.strMeal ?? "Name not available"),
+        );
+
+      //   How to use - Rithik
+      //   getRecipeNames("pancake").then((result) => console.log(result));
+
+      getSeaFoodNames("noodles").then((result) => console.log(result));
+    </script>
+  </body>
+</html>

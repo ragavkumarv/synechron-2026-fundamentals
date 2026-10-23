@@ -46,6 +46,7 @@
   <body>
     <!-- <section class="countries-container"></section> -->
     <script>
+      // Part 1 - fetch
       const countriesInfo = [
         {
           name: "India",
@@ -89,11 +90,19 @@
           flag: "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
           capital: "Pretoria",
         },
+        {
+          name: "New Zealand",
+          population: "55,653,654",
+          region: "Africa",
+          flag: "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
+          capital: "Pretoria",
+        },
       ];
 
       //   const country = countriesInfo[5];
       //   Make it work then make it better
 
+      // Part 2 - Painting - DOM
       const createCountryCard = ({
         flag,
         name,
